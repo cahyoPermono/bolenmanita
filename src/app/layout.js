@@ -13,7 +13,10 @@ export const metadata = {
     description: 'Enak, Lumer, Crunchy. Pesan sekarang!',
     type: 'website',
     locale: 'id_ID',
-  }
+  },
+  verification: {
+    google: 'fF_v8goJI1556v92AoM9jdPIeU-FZHSaBZ4fGU0ElnQ',
+  },
 }
 
 export default function RootLayout({ children }) {
