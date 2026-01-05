@@ -28,7 +28,7 @@ export default function Home() {
             <h1 style={{ fontSize: '4rem', margin: '0.5rem 0', color: 'var(--color-text-main)' }}>
               Enak, Lumer, <br/> & Crunchy
             </h1>
-            <p className="mb-4" style={{ fontSize: '1.2rem', color: 'var(--color-text-light)', lineHeight: '1.6' }}>
+            <p className="mb-4 hero-desc" style={{ fontSize: '1.2rem', color: 'var(--color-text-light)', lineHeight: '1.6' }}>
               Rasakan sensasi kelezatan Bolen Pisang premium khas Surabaya dengan kulit pastry yang renyah berlapis-lapis dan isian yang melimpah. Dibuat dengan cinta untuk memanjakan lidah Anda.
             </p>
             <div className="hero-buttons">
