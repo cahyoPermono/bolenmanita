@@ -7,7 +7,9 @@ export default function Home() {
       <nav className="glass" style={{ position: 'fixed', width: '100%', zIndex: 100, padding: '0.5rem 0' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-
+            <div style={{ width: '50px', height: '50px', position: 'relative' }}>
+              <Image src="/bolenmanita/images/logo.png" alt="Bolen Manita Logo" fill style={{ objectFit: 'contain' }} />
+            </div>
             <div style={{ fontWeight: 'bold', fontSize: '1.5rem', fontFamily: 'var(--font-heading)' }}>
               BOLEN MANITA
             </div>
