@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
               name: 'Bolenmanita',
-              image: '/images/bolen-cokelat.png', // Ideally absolute URL in prod
+              image: 'https://cahyoPermono.github.io/bolenmanita/images/bolen-cokelat.png', // Ideally absolute URL in prod
               description: 'Bolen Pisang Premium dengan isian lumer dan kulit crunchy. Oleh-oleh khas dan snack favorit keluarga.',
               address: {
                 '@type': 'PostalAddress',
