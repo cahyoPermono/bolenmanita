@@ -5,12 +5,12 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body', display: 'swa
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-heading', display: 'swap' })
 
 export const metadata = {
-  title: 'Bolenmanita - Premium Authentic Bolen',
-  description: 'Nikmati kelezatan Bolenmanita yang lumer, crunchy, dan premium. Tersedia berbagai varian rasa: Cokelat, Keju, Sosis, dan Mix.',
-  keywords: 'bolen, bolen pisang, bolen cokelat, oleh-oleh, kue, pastry, bakery',
+  title: 'Bolenmanita - Bolen Pisang Premium Khas Surabaya',
+  description: 'Pusat Bolen Surabaya yang enak, lumer, dan crunchy. Tersedia varian Cokelat, Keju, dan Sosis. Oleh-oleh wajib khas Surabaya.',
+  keywords: 'bolen surabaya, bolen pisang surabaya, oleh-oleh surabaya, bolen enak surabaya, bolen lumer, kuliner surabaya',
   openGraph: {
-    title: 'Bolenmanita - Premium Authentic Bolen',
-    description: 'Enak, Lumer, Crunchy. Pesan sekarang!',
+    title: 'Bolenmanita - Bolen Pisang Premium Khas Surabaya',
+    description: 'Enak, Lumer, Crunchy. Pesan sekarang untuk oleh-oleh khas Surabaya!',
     type: 'website',
     locale: 'id_ID',
   },
