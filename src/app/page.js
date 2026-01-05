@@ -51,7 +51,7 @@ export default function Home() {
              {/* Main Hero Image */}
              <div style={{ position: 'relative', width: '100%', height: '500px', borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
                  <Image 
-                   src="/images/bolen-cokelat.png" 
+                   src="/bolenmanita/images/bolen-cokelat.png" 
                    alt="Bolen Cokelat Lumer" 
                    fill 
                    style={{ objectFit: 'cover' }}
@@ -84,35 +84,35 @@ export default function Home() {
               price10="47k" 
               price6="28k"
               desc="Perpaduan pisang manis dan cokelat lumer yang melimpah."
-              image="/images/bolen-cokelat.png"
+              image="/bolenmanita/images/bolen-cokelat.png"
             />
             <ProductCard 
               title="Bolen Cokelat Keju" 
               price10="47k" 
               price6="28k" 
               desc="Mix rasa cokelat manis dan keju gurih dalam satu gigitan."
-              image="/images/bolen-cokelat-keju.png" // We need to ensure we map correct images
+              image="/bolenmanita/images/bolen-cokelat-keju.png" // We need to ensure we map correct images
             />
              <ProductCard 
               title="Bolen Cokelat Sosis" 
               price10="49k" 
               price6="30k" 
               desc="Kombinasi unik manisnya cokelat dan gurihnya sosis."
-              image="/images/bolen-cokelat-sosis.png"
+              image="/bolenmanita/images/bolen-cokelat-sosis.png"
             />
              <ProductCard 
               title="Bolen Sosis" 
               price10="50k" 
               price6="30k" 
               desc="Full savory! Pisang (optional) dan sosis premium."
-              image="/images/bolen-sosis.png"
+              image="/bolenmanita/images/bolen-sosis.png"
             />
              <ProductCard 
               title="Bolen Premium Cokju" 
               price10="55k" 
               price6="35k" 
               desc="Extra filling cokelat dan keju, lebih lumer lebih puas."
-              image="/images/bolen-premium-cokju.png"
+              image="/bolenmanita/images/bolen-premium-cokju.png"
               isPremium
             />
           </div>
