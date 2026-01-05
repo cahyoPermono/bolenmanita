@@ -5,7 +5,6 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/bolenmanita',
-  assetPrefix: '/bolenmanita',
 };
 
 export default nextConfig;
