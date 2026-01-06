@@ -30,6 +30,8 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-main);
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  /* Fix for sticky navbar */
 }
 
 h1,
