@@ -14,6 +14,10 @@ export const metadata = {
     type: 'website',
     locale: 'id_ID',
   },
+  icons: {
+    icon: '/bolenmanita/icon.png',
+    apple: '/bolenmanita/icon.png',
+  },
   verification: {
     google: 'fF_v8goJI1556v92AoM9jdPIeU-FZHSaBZ4fGU0ElnQ',
   },
@@ -26,25 +30,38 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              name: 'Bolenmanita',
-              image: 'https://cahyoPermono.github.io/bolenmanita/images/bolen-cokelat.png', // Ideally absolute URL in prod
-              description: 'Bolen Pisang Premium dengan isian lumer dan kulit crunchy. Oleh-oleh khas dan snack favorit keluarga.',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Surabaya Utara',
-                addressLocality: 'Surabaya', 
-                addressRegion: 'Jawa Timur',
-                addressCountry: 'ID'
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                name: 'Bolenmanita',
+                url: 'https://cahyoPermono.github.io/bolenmanita/',
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: 'https://cahyoPermono.github.io/bolenmanita/?q={search_term_string}',
+                  'query-input': 'required name=search_term_string'
+                }
               },
-              priceRange: 'IDR 28.000 - IDR 55.000',
-              telephone: '+6282233064655',
-              url: 'https://bolenmanita.com', // Placeholder URL
-              menu: 'https://bolenmanita.com/#menu',
-              servesCuisine: 'Indonesian Bakery'
-            })
+              {
+                '@context': 'https://schema.org',
+                '@type': 'LocalBusiness',
+                name: 'Bolenmanita',
+                image: 'https://cahyoPermono.github.io/bolenmanita/images/bolen-cokelat.png', // Ideally absolute URL in prod
+                description: 'Bolen Pisang Premium dengan isian lumer dan kulit crunchy. Oleh-oleh khas dan snack favorit keluarga.',
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: 'Surabaya Utara',
+                  addressLocality: 'Surabaya', 
+                  addressRegion: 'Jawa Timur',
+                  addressCountry: 'ID'
+                },
+                priceRange: 'IDR 28.000 - IDR 55.000',
+                telephone: '+6282233064655',
+                url: 'https://cahyoPermono.github.io/bolenmanita/',
+                menu: 'https://cahyoPermono.github.io/bolenmanita/#menu',
+                servesCuisine: 'Indonesian Bakery'
+              }
+            ])
           }}
         />
       </head>
