@@ -6,14 +6,24 @@ export default function Home() {
       {/* Navbar/Header */}
       <nav className="glass" style={{ position: 'fixed', width: '100%', zIndex: 100, padding: '0.5rem 0' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{ width: '50px', height: '50px', position: 'relative' }}>
-              <Image src="/bolenmanita/images/logo.png" alt="Bolen Manita Logo" fill style={{ objectFit: 'contain' }} />
-            </div>
-            <div style={{ fontWeight: 'bold', fontSize: '1.5rem', fontFamily: 'var(--font-heading)' }}>
-              BOLEN MANITA
+          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+            <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <div style={{ width: '50px', height: '50px', position: 'relative' }}>
+                <Image src="/bolenmanita/images/logo.png" alt="Bolen Manita Logo" fill style={{ objectFit: 'contain' }} />
+              </div>
+              <div style={{ fontWeight: 'bold', fontSize: '1.5rem', fontFamily: 'var(--font-heading)', color: 'var(--color-text-main)' }}>
+                BOLEN MANITA
+              </div>
+            </a>
+            
+            {/* Desktop Navigation */}
+            <div className="mobile-hidden" style={{ display: 'flex', gap: '1.5rem', marginLeft: '1rem', fontWeight: '500' }}>
+               <a href="/#menu" className="nav-link">Menu</a>
+               <a href="/#about" className="nav-link">Tentang Kami</a>
+               <a href="/artikel" className="nav-link">Artikel</a>
             </div>
           </div>
+
           <a href="https://wa.me/6282233064655" className="btn" target="_blank" rel="noopener noreferrer">
             Order Now
           </a>
@@ -66,6 +76,33 @@ export default function Home() {
                 <p>Bolen Cokelat</p>
              </div>
           </div>
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about" className="section" style={{ background: 'white' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
+           <div className="fade-in-up">
+              <span style={{ color: 'var(--color-accent)', fontWeight: 'bold', textTransform: 'uppercase' }}>Tentang Kami</span>
+              <h2 style={{ fontSize: '3rem', margin: '1rem 0', lineHeight: '1.2' }}>Dari Surabaya Utara, <br/>Untuk Indonesia</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+                Berawal dari dapur sederhana di Surabaya Utara, Bolenmanita hadir dengan satu mimpi: menyajikan kehangatan dalam setiap gigitan. Kami percaya bahwa bolen pisang bukan sekadar camilan, tapi sebuah <strong>tradisi rasa yang menyatukan</strong>.
+              </p>
+              <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', lineHeight: '1.8' }}>
+                Setiap kotak Bolenmanita dibuat teknik pemanggangan sempurna dan bahan premium pilihan. Kini, kami bangga dapat mengirimkan cita rasa otentik ini ke seluruh penjuru Nusantara. 
+              </p>
+              <div style={{ marginTop: '2rem' }}>
+                <a href="/artikel" style={{ color: 'var(--color-accent)', fontWeight: 'bold', textDecoration: 'underline' }}>Baca Cerita Lengkap &rarr;</a>
+              </div>
+           </div>
+           <div className="fade-in-up" style={{ position: 'relative', height: '400px', borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
+              <Image 
+                 src="/bolenmanita/images/bolen-premium-cokju.png" 
+                 alt="Dapur Bolenmanita" 
+                 fill 
+                 style={{ objectFit: 'cover' }} 
+              />
+           </div>
         </div>
       </section>
 

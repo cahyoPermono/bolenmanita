@@ -61,6 +61,31 @@ img {
   padding: 0 1rem;
 }
 
+.nav-link {
+  position: relative;
+  color: var(--color-text-main);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 .section {
   padding: 5rem 0;
 }
