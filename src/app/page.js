@@ -19,8 +19,8 @@ export default function Home() {
             
             {/* Desktop Navigation */}
             <div className="mobile-hidden" style={{ display: 'flex', gap: '1.5rem', marginLeft: '1rem', fontWeight: '500' }}>
-               <Link href="/#menu" className="nav-link">Menu</Link>
-               <Link href="/#about" className="nav-link">Tentang Kami</Link>
+               <a href="#menu" className="nav-link">Menu</a>
+               <a href="#about" className="nav-link">Tentang Kami</a>
                <Link href="/artikel" className="nav-link">Artikel</Link>
             </div>
           </div>
