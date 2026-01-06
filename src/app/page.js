@@ -93,7 +93,7 @@ export default function Home() {
                 Setiap kotak Bolenmanita dibuat teknik pemanggangan sempurna dan bahan premium pilihan. Kini, kami bangga dapat mengirimkan cita rasa otentik ini ke seluruh penjuru Nusantara. 
               </p>
               <div style={{ marginTop: '2rem' }}>
-                <a href="/artikel" style={{ color: 'var(--color-accent)', fontWeight: 'bold', textDecoration: 'underline' }}>Baca Cerita Lengkap &rarr;</a>
+                <Link href="/artikel/cerita-kami" style={{ color: 'var(--color-accent)', fontWeight: 'bold', textDecoration: 'underline' }}>Baca Cerita Lengkap &rarr;</Link>
               </div>
            </div>
            <div className="fade-in-up" style={{ position: 'relative', height: '400px', borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
