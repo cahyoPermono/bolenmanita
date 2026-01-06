@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
@@ -7,20 +8,20 @@ export default function Home() {
       <nav className="glass" style={{ position: 'fixed', width: '100%', zIndex: 100, padding: '0.5rem 0' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-            <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <div style={{ width: '50px', height: '50px', position: 'relative' }}>
                 <Image src="/bolenmanita/images/logo.png" alt="Bolen Manita Logo" fill style={{ objectFit: 'contain' }} />
               </div>
               <div style={{ fontWeight: 'bold', fontSize: '1.5rem', fontFamily: 'var(--font-heading)', color: 'var(--color-text-main)' }}>
                 BOLEN MANITA
               </div>
-            </a>
+            </Link>
             
             {/* Desktop Navigation */}
             <div className="mobile-hidden" style={{ display: 'flex', gap: '1.5rem', marginLeft: '1rem', fontWeight: '500' }}>
-               <a href="/#menu" className="nav-link">Menu</a>
-               <a href="/#about" className="nav-link">Tentang Kami</a>
-               <a href="/artikel" className="nav-link">Artikel</a>
+               <Link href="/#menu" className="nav-link">Menu</Link>
+               <Link href="/#about" className="nav-link">Tentang Kami</Link>
+               <Link href="/artikel" className="nav-link">Artikel</Link>
             </div>
           </div>
 
