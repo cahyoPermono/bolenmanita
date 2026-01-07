@@ -87,10 +87,10 @@ export default function Home() {
               <span style={{ color: 'var(--color-accent)', fontWeight: 'bold', textTransform: 'uppercase' }}>Tentang Kami</span>
               <h2 style={{ fontSize: '3rem', margin: '1rem 0', lineHeight: '1.2' }}>Dari Surabaya Utara, <br/>Untuk Indonesia</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                Berawal dari dapur sederhana di Surabaya Utara, Bolenmanita hadir dengan satu mimpi: menyajikan kehangatan dalam setiap gigitan. Kami percaya bahwa bolen pisang bukan sekadar camilan, tapi sebuah <strong>tradisi rasa yang menyatukan</strong>.
+                Berawal dari dapur sederhana di Surabaya Utara, Bolenmanita hadir dengan satu mimpi: menyajikan kehangatan dalam setiap gigitan. Kami percaya bahwa <strong>Bolen Surabaya</strong> bukan sekadar camilan, tapi sebuah tradisi rasa yang menyatukan.
               </p>
               <p style={{ fontSize: '1.1rem', color: 'var(--color-text-light)', lineHeight: '1.8' }}>
-                Setiap kotak Bolenmanita dibuat teknik pemanggangan sempurna dan bahan premium pilihan. Kini, kami bangga dapat mengirimkan cita rasa otentik ini ke seluruh penjuru Nusantara. 
+                Setiap kotak Bolenmanita dibuat teknik pemanggangan sempurna dan bahan premium pilihan. Kini, kami bangga menjadi salah satu ikon <strong>Oleh-oleh Khas Surabaya</strong> yang dapat dikirim ke seluruh penjuru Nusantara. 
               </p>
               <div style={{ marginTop: '2rem' }}>
                 <Link href="/artikel/cerita-kami" style={{ color: 'var(--color-accent)', fontWeight: 'bold', textDecoration: 'underline' }}>Baca Cerita Lengkap &rarr;</Link>
@@ -99,12 +99,36 @@ export default function Home() {
            <div className="fade-in-up" style={{ position: 'relative', height: '400px', borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
               <Image 
                  src="/bolenmanita/images/bolen-premium-cokju.png" 
-                 alt="Dapur Bolenmanita" 
+                 alt="Dapur Bolenmanita - Pusat Bolen Surabaya" 
                  fill 
                  style={{ objectFit: 'cover' }} 
               />
            </div>
         </div>
+      </section>
+
+      {/* Location Section - SEO Booster */}
+      <section className="section">
+         <div className="container">
+            <div className="text-center mb-6">
+                <span style={{ color: 'var(--color-accent)', fontWeight: 'bold', textTransform: 'uppercase' }}>Lokasi Kami</span>
+                <h2 style={{ fontSize: '2.5rem', margin: '0.5rem 0' }}>Kunjungi Dapur Bolenmanita</h2>
+                <p style={{ color: 'var(--color-text-light)' }}>Siap melayani pesanan Anda area Surabaya dan sekitarnya.</p>
+            </div>
+            <div style={{ width: '100%', height: '400px', borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
+               <iframe 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  marginHeight="0" 
+                  marginWidth="0" 
+                  src="https://maps.google.com/maps?q=-7.20973344221493,112.76341137173134&hl=id&z=15&output=embed"
+                  title="Lokasi Bolenmanita Surabaya"
+               >
+               </iframe>
+            </div>
+         </div>
       </section>
 
       {/* Menu Section */}
